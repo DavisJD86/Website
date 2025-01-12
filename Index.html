@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Join over 20,000 people taking control of their energy with Smart Energy's solar and battery solutions. Zero upfront cost and top-notch service!">
-    <meta name="keywords" content="Solar, Batteries, Smart Energy, Zero Upfront Cost, Renewable Energy, Energy Control">
-    <meta name="author" content="Smart Energy">
+    <meta name="description" content="$0 upfront solar with Neutral Energy's solar and battery systems. Zero deposit and premium service!">
+    <meta name="keywords" content="Solar, Batteries, Neutral Energy, Zero Upfront Cost, Renewable Energy, Energy Control">
+    <meta name="author" content="Neutral Energy">
     <meta name="robots" content="index, follow">
-    <title>Smart Energy - Solar & Batteries with Zero Upfront Cost</title>
+    <title>Neutral Energy - Solar & Batteries with Zero Upfront Cost</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Smart Energy",
-            "url": "https://smartenergy.com",
+            "name": "Neutral Energy",
+            "url": "https://neutralenergy.com",
             "logo": "logo.png",
             "contactPoint": {
                 "@type": "ContactPoint",
@@ -56,6 +56,7 @@
         nav {
             display: flex;
             gap: 15px;
+            position: relative;
         }
 
         nav a {
@@ -67,6 +68,35 @@
 
         nav a:hover {
             color: #007BFF;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
 
         .breadcrumb {
@@ -166,14 +196,69 @@
             font-size: 1.2em;
             line-height: 1.8;
         }
+
+        .cta-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .cta-text {
+            max-width: 50%;
+        }
+
+        .cta-text h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .cta-text p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .cta-text .cta-button {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-text .cta-button:hover {
+            background-color: #218838;
+        }
+
+        .animation-container {
+            max-width: 50%;
+            position: relative;
+        }
+
+        .animation-container img {
+            width: 100%;
+            animation: decreaseBill 3s infinite alternate;
+        }
+
+        @keyframes decreaseBill {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-20px);
+            }
+        }
     </style>
 </head>
 <body>
 
 <header>
     <div class="logo">
-        <img src="logo.png" alt="Smart Energy Logo"> <!-- Replace with logo URL -->
-        <span>Smart Energy</span>
+        <img src="logo.png" alt="Neutral Energy Logo"> <!-- Replace with logo URL -->
+        <span>Neutral Energy</span>
     </div>
     <nav>
         <a href="#pay-bill">Pay Bill</a>
@@ -181,6 +266,17 @@
         <a href="#solar">Solar</a>
         <a href="#batteries">Batteries</a>
         <a href="#heat-pumps">Heat Pumps</a>
+        <div class="dropdown">
+            <a href="#local-incentives">Local Incentives</a>
+            <div class="dropdown-content">
+                <a href="#sydney">Sydney</a>
+                <a href="#melbourne">Melbourne</a>
+                <a href="#brisbane">Brisbane</a>
+                <a href="#perth">Perth</a>
+                <a href="#adelaide">Adelaide</a>
+                <a href="#canberra">Canberra</a>
+            </div>
+        </div>
         <a href="#support">Help & Support</a>
     </nav>
 </header>
@@ -192,8 +288,19 @@
 <section class="hero">
     <div class="hero-content">
         <h1>Solar & Batteries with zero upfront cost</h1>
-        <p class="accessible">Join more than 20,000 people that control their energy</p>
+        <p class="accessible">$0 upfront solar with Neutral Energy's solar and battery systems!</p>
         <a href="#contact" class="cta-button">Find out how</a>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="cta-text">
+        <h2>Save Money on Your Energy Bills</h2>
+        <p>Switch to Neutral Energy today and see your energy bills decrease. Act now and enjoy zero upfront cost!</p>
+        <a href="#get-started" class="cta-button">Start Saving</a>
+    </div>
+    <div class="animation-container">
+        <img src="energy-bill-animation.png" alt="Energy Bill Animation"> <!-- Replace with correct image URL -->
     </div>
 </section>
 
@@ -206,7 +313,7 @@
 </section>
 
 <footer>
-    &copy; 2025 Smart Energy. All Rights Reserved. | <a href="#privacy-policy">Privacy Policy</a> | <a href="#terms">Terms of Service</a>
+    &copy; 2025 Neutral Energy. All Rights Reserved. | <a href="#privacy-policy">Privacy Policy</a> | <a href="#terms">Terms of Service</a>
 </footer>
 
 <script>
